@@ -1,37 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ucv-10-u4S">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="jgR-GX-FIZ">
+            <objects>
+                <viewController id="Ucv-10-u4S" customClass="LaunchViewController" customModule="ARthingy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wlW-X4-EmK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARPlayer will search for these images " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3l-22-qHv">
+                                <rect key="frame" x="62" y="96" width="290" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="Oee-mN-N3P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e4Z-kx-z3N">
+                                <rect key="frame" x="44" y="213" width="324" height="405"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T42-Vo-6kv">
+                                <rect key="frame" x="103" y="689" width="235" height="108"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="e3Z-Xw-DTu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <state key="normal" title="Start Searching">
+                                    <color key="titleColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="s7O-7o-yNH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f3l-22-qHv" firstAttribute="centerX" secondItem="wlW-X4-EmK" secondAttribute="centerX" id="1EA-xE-5ce"/>
+                            <constraint firstItem="e4Z-kx-z3N" firstAttribute="leading" secondItem="f5f-Fe-ccD" secondAttribute="leading" constant="44" id="1Gn-iW-ViZ"/>
+                            <constraint firstItem="T42-Vo-6kv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f5f-Fe-ccD" secondAttribute="leading" id="1yl-9L-4N8"/>
+                            <constraint firstItem="f5f-Fe-ccD" firstAttribute="bottom" secondItem="T42-Vo-6kv" secondAttribute="bottom" constant="65" id="4V6-71-5Q1"/>
+                            <constraint firstItem="f5f-Fe-ccD" firstAttribute="trailing" secondItem="e4Z-kx-z3N" secondAttribute="trailing" constant="46" id="A4n-P5-3P2"/>
+                            <constraint firstItem="e4Z-kx-z3N" firstAttribute="top" secondItem="f3l-22-qHv" secondAttribute="bottom" constant="28" id="LC4-WN-6Zf"/>
+                            <constraint firstItem="f5f-Fe-ccD" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T42-Vo-6kv" secondAttribute="trailing" id="iZR-oa-By9"/>
+                            <constraint firstItem="e4Z-kx-z3N" firstAttribute="top" secondItem="f5f-Fe-ccD" secondAttribute="top" constant="169" id="o8D-KS-aWe"/>
+                            <constraint firstItem="f5f-Fe-ccD" firstAttribute="bottom" secondItem="e4Z-kx-z3N" secondAttribute="bottom" constant="244" id="oNV-8e-gf7"/>
+                            <constraint firstItem="e4Z-kx-z3N" firstAttribute="centerX" secondItem="T42-Vo-6kv" secondAttribute="centerX" constant="-14.5" id="pJV-Bk-kNo"/>
+                            <constraint firstItem="f3l-22-qHv" firstAttribute="top" secondItem="f5f-Fe-ccD" secondAttribute="top" constant="52" id="xCF-UP-EP0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f5f-Fe-ccD"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="e4Z-kx-z3N" id="YpP-Bh-ykY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djq-YJ-0Nd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407.24637681159425" y="76.339285714285708"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="ARViewController" customModule="ARthingy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-54" width="414" height="896"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="topMargin" constant="-54" id="8E9-1z-Qch"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="ULY-h1-LbE"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="VSw-8b-7qj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="BrB-h1-WRS" secondAttribute="bottom" constant="-34" id="rY6-Me-YWK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3LX-3b-yPY"/>
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="400.00000000000006" y="70.982142857142847"/>
         </scene>
     </scenes>
 </document>

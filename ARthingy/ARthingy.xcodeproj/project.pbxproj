@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C70CA8237EF65A00F1532B /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C70CA7237EF65A00F1532B /* LaunchViewController.swift */; };
+		52C70CAA237F042D00F1532B /* sosa.mov in Resources */ = {isa = PBXBuildFile; fileRef = 52C70CA9237F042D00F1532B /* sosa.mov */; };
 		BF7EAC4B234DE7DC00905957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EAC4A234DE7DC00905957 /* AppDelegate.swift */; };
-		BF7EAC4D234DE7DC00905957 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7EAC4C234DE7DC00905957 /* art.scnassets */; };
-		BF7EAC4F234DE7DC00905957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EAC4E234DE7DC00905957 /* ViewController.swift */; };
+		BF7EAC4F234DE7DC00905957 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EAC4E234DE7DC00905957 /* ARViewController.swift */; };
 		BF7EAC52234DE7DC00905957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7EAC50234DE7DC00905957 /* Main.storyboard */; };
 		BF7EAC54234DE7DD00905957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7EAC53234DE7DD00905957 /* Assets.xcassets */; };
 		BF7EAC57234DE7DD00905957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7EAC55234DE7DD00905957 /* LaunchScreen.storyboard */; };
 		BF7EAC5F234DE84900905957 /* black.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BF7EAC5E234DE84900905957 /* black.mp4 */; };
-		BF7EAC64234DF65B00905957 /* ts.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BF7EAC62234DF65900905957 /* ts.mp4 */; };
 		BF7EAC65234DF65B00905957 /* mrdo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BF7EAC63234DF65B00905957 /* mrdo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52C70CA7237EF65A00F1532B /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		52C70CA9237F042D00F1532B /* sosa.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sosa.mov; sourceTree = "<group>"; };
 		BF7EAC47234DE7DC00905957 /* ARthingy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARthingy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7EAC4A234DE7DC00905957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF7EAC4C234DE7DC00905957 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		BF7EAC4E234DE7DC00905957 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF7EAC4E234DE7DC00905957 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		BF7EAC51234DE7DC00905957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF7EAC53234DE7DD00905957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF7EAC56234DE7DD00905957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF7EAC58234DE7DD00905957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF7EAC5E234DE84900905957 /* black.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = black.mp4; sourceTree = "<group>"; };
-		BF7EAC62234DF65900905957 /* ts.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ts.mp4; sourceTree = "<group>"; };
 		BF7EAC63234DF65B00905957 /* mrdo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mrdo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,14 +63,14 @@
 			isa = PBXGroup;
 			children = (
 				BF7EAC4A234DE7DC00905957 /* AppDelegate.swift */,
-				BF7EAC4C234DE7DC00905957 /* art.scnassets */,
-				BF7EAC4E234DE7DC00905957 /* ViewController.swift */,
+				BF7EAC4E234DE7DC00905957 /* ARViewController.swift */,
 				BF7EAC50234DE7DC00905957 /* Main.storyboard */,
+				52C70CA7237EF65A00F1532B /* LaunchViewController.swift */,
 				BF7EAC53234DE7DD00905957 /* Assets.xcassets */,
 				BF7EAC55234DE7DD00905957 /* LaunchScreen.storyboard */,
 				BF7EAC58234DE7DD00905957 /* Info.plist */,
 				BF7EAC63234DF65B00905957 /* mrdo.mp4 */,
-				BF7EAC62234DF65900905957 /* ts.mp4 */,
+				52C70CA9237F042D00F1532B /* sosa.mov */,
 				BF7EAC5E234DE84900905957 /* black.mp4 */,
 			);
 			path = ARthingy;
@@ -134,9 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF7EAC64234DF65B00905957 /* ts.mp4 in Resources */,
+				52C70CAA237F042D00F1532B /* sosa.mov in Resources */,
 				BF7EAC65234DF65B00905957 /* mrdo.mp4 in Resources */,
-				BF7EAC4D234DE7DC00905957 /* art.scnassets in Resources */,
 				BF7EAC57234DE7DD00905957 /* LaunchScreen.storyboard in Resources */,
 				BF7EAC54234DE7DD00905957 /* Assets.xcassets in Resources */,
 				BF7EAC5F234DE84900905957 /* black.mp4 in Resources */,
@@ -151,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF7EAC4F234DE7DC00905957 /* ViewController.swift in Sources */,
+				BF7EAC4F234DE7DC00905957 /* ARViewController.swift in Sources */,
+				52C70CA8237EF65A00F1532B /* LaunchViewController.swift in Sources */,
 				BF7EAC4B234DE7DC00905957 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
